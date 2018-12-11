@@ -1,10 +1,10 @@
 # Site settings
 title: Chowdown
-email: your-email@domain.com
+email: dhisaacs@gmail.com
 description: The plain text recipe database for hackers
-baseurl: ""
-twitter_username: clarklab
-github_username:  clarklab
+baseurl: "/cooking"
+twitter_username: 
+github_username:  di-dc
 
 # Build settings
 markdown: kramdown
