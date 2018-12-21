@@ -7,6 +7,7 @@ tags: side, party
 
 ingredients:
 - 1 jar Peppedew Peppers (or piquante pepper)
+- test "ingredient" with "quotes"
 - 4oz goat cheese (any flavor)
 - 1 tbsp mayonnaise
 - 1 tbsp sour cream
