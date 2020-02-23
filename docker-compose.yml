@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  chowdown:
+    image: jekyll/jekyll
+    restart: always
+    container_name: chowdown
+    command: jekyll serve --force_polling
+    ports:
+      - "4000:4000"
+    volumes:
+      - .:/srv/jekyll
+      - ./data/_components:/srv/jekyll/_components
+      - ./_posts:/srv/jekyll/_posts
+      - ./_recipes:/srv/jekyll/_recipes
+      - ./_data:/srv/jekyll/_data
+      - ./images:/srv/jekyll/images

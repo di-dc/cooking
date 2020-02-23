@@ -1,8 +1,11 @@
 # Site settings
 title: Chowdown
-email: dhisaacs@gmail.com
+email: dan@danisaacs.net
 description: The plain text recipe database for hackers
 baseurl: "/cooking"
+language: "en"
+lang_direction: "ltr"
+color: "#007FFF"
 twitter_username: 
 github_username:  di-dc
 
