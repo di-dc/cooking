@@ -7,18 +7,18 @@ title: Recipes Listed By Tag
 {% assign sorted_recipes = site.recipes | sort: 'title' %}
 
 <div id="tags">
-        {% for tag in recipes_tags %}
-        {% if tag == '' %}
-            {% continue %}
-        {% endif %}
-        <h4 class="ml4">{{ tag }}</h4>
-        <ul class="ml4">
-                {% for recipe in sorted_recipes %}
-                    {% assign tags_array = recipe.tags | join: ',' | split: ',' %}
-                    {% if tags_array contains tag %}
-                <li><a href="{{ recipe.url | prepend: site.baseurl }}">{{ recipe.title }}</a></li>
-                    {% endif %}
-                {% endfor %}
-        </ul>
+    {% for tag in recipes_tags %}
+    {% if tag == '' %}
+        {% continue %}
+    {% endif %}
+    <h4 class="ml4">{{ tag }}</h4>
+    <ul class="ml4">
+        {% for recipe in sorted_recipes %}
+            {% assign tags_array = recipe.tags | join: ',' | split: ',' %}
+            {% if tags_array contains tag %}
+        <li><a href="{{ recipe.url | prepend: site.baseurl }}">{{ recipe.title }}</a></li>
+            {% endif %}
         {% endfor %}
+    </ul>
+    {% endfor %}
 </div>
