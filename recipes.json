@@ -7,5 +7,6 @@ layout: null
     {
         "title": "{{ post.title }}",
         "image": "{{ site.baseurl }}/images/{{ post.image }}"
+        "tags" : "{{ post.tags }}"
     }{% if counter == total %}{% else %},{% endif %}
 {% assign counter = counter |plus: 1 %}{% endfor %}]
